@@ -1,0 +1,29 @@
+{
+	"name": "gf-portfolio",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "next build",
+		"start": "bun run build && serve out",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@remixicon/react": "^4.2.0",
+		"next": "^14.1.4",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/bun": "^1.0.10",
+		"@types/react": "^18.2.67",
+		"@types/react-dom": "^18.2.22",
+		"dprint": "^0.45.0",
+		"eslint": "^8.57.0",
+		"eslint-config-next": "^14.1.4",
+		"eslint-plugin-no-array-concat": "^0.1.2",
+		"sass": "^1.72.0",
+		"typescript": "^5.4.3",
+		"typescript-eslint": "^7.3.1"
+	}
+}
