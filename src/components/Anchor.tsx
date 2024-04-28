@@ -1,20 +1,20 @@
 // https://github.com/trpfrog/trpfrog.net/blob/main/src/components/wrappers/A.tsx
 
-import { forwardRef, useMemo } from "react";
+import { forwardRef } from "react";
 
 import Link from "next/link";
 
+import type { MakeRequired } from "@/lib/utils";
 import type { ComponentPropsWithRef } from "react";
 
-const Anchor = forwardRef<HTMLAnchorElement, ComponentPropsWithRef<"a">>(function Anchor({ href = "", ...rest }, ref) {
-	const isInternal = href.startsWith("/");
-	const openInNewTabProps = useMemo(() =>
-		isInternal ? {} : {
-			target: "_blank",
-			rel: "noopener noreferrer",
-		}, [isInternal]);
-	return isInternal
-		? <Link {...{ href, ref, ...rest, ...openInNewTabProps }} />
+const openInNewTabProps = { target: "_blank", rel: "noopener noreferrer" };
+const Anchor = forwardRef<
+	HTMLAnchorElement,
+	MakeRequired<Omit<ComponentPropsWithRef<"a">, keyof typeof openInNewTabProps>, "href" | "children">
+>(function Anchor({ href, ...rest }, ref) {
+	// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+	return "/#".includes(href[0]!)
+		? <Link {...{ href, ref, ...rest }} />
 		: <a {...{ href, ref, ...openInNewTabProps, ...rest }} />;
 });
 

@@ -31,7 +31,15 @@
     svg {
       flex-shrink: 0;
     }
-    span {
+    > div {
+      margin-left: 0.5rem;
+      > div:last-child {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #597D4A;
+      }
+    }
+    > span {
       margin-left: 0.5rem;
     }
     &.has-reference {
@@ -72,7 +80,7 @@
   }
 }
 .year {
-  color: #d2d2d2;
+  color: #888;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
