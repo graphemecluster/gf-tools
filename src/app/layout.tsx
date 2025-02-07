@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navigation from "@/components/Navigation";
-import { fonts } from "@/lib/consts";
 
 import "./global.scss";
 import styles from "./styles.module.scss";
@@ -56,7 +55,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return <html lang={locale}>
-		<body className={Object.values(fonts).map(({ className }) => className).join(" ")}>
+		<body>
+			{/* "next/font/google" does not seem to work */}
+			<link rel="preconnect" href="https://fonts.googleapis.com" />
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+			{/* eslint-disable-next-line @next/next/no-page-custom-font -- See https://github.com/vercel/next.js/issues/55213 */}
+			<link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+HK:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet" />
+			{/* eslint-disable-next-line @next/next/no-page-custom-font */}
+			<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&text=AFIK&display=swap" rel="stylesheet" />
 			<div className={styles["container"]}>
 				<Header />
 				<Navigation />

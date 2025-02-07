@@ -20,7 +20,7 @@
   font-size: 1.125rem;
   line-height: 1.75rem;
   color: #888;
-  margin: 0 1rem 0 0.25rem;
+  margin: 0 3rem 0 0.25rem;
   > :first-child {
     display: block;
     font-size: 1.875rem;
@@ -28,7 +28,7 @@
     color: #333;
   }
   > :not(:first-child):not(:last-child)::after {
-		content: " · ";
+    content: " · ";
   }
 }
 .card-logo {
