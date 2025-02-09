@@ -1,9 +1,12 @@
 .container {
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
-  --font-mono: "Noto Sans Mono", "Consolas", "Courier New", Courier, monospace;
-  --font-hk: Cantarell, "Noto Sans CJK HK", "Noto Sans HK", var(--font-sans);
-  --font-ja: Cantarell, "Noto Sans CJK JP", "Noto Sans JP", var(--font-sans);
+  --font-mono: "Noto Sans Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-bold: Kufam, var(--font-sans);
+  --font-hk: Cantarell, "Noto Sans HK", var(--font-sans);
+  --font-ja: Cantarell, "Zen Kaku Gothic New", var(--font-sans);
+  --font-first-letter: "IBM Plex Sans", Cantarell, var(--font-sans);
   font-family: var(--font-hk);
+  letter-spacing: -0.0075em;
   [lang="ja"] {
     font-family: var(--font-ja);
   }

@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   color: white;
+  letter-spacing: 0;
   transition: 150ms opacity;
   &:hover, &:focus {
     opacity: 0.9;
@@ -29,9 +30,10 @@
 }
 .brand-title-zh {
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 2.375rem;
 }
 .brand-title-en {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
+  font-family: var(--font-bold);
 }

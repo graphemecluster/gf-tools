@@ -60,9 +60,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 			<link rel="preconnect" href="https://fonts.googleapis.com" />
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 			{/* eslint-disable-next-line @next/next/no-page-custom-font -- See https://github.com/vercel/next.js/issues/55213 */}
-			<link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+HK:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet" />
+			<link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Kufam:wght@650;700&family=Noto+Sans+HK:wght@100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet" />
 			{/* eslint-disable-next-line @next/next/no-page-custom-font */}
-			<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&text=AFIK&display=swap" rel="stylesheet" />
+			<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&text=I&display=swap" rel="stylesheet" />
+			{/* eslint-disable-next-line @next/next/no-page-custom-font */}
+			<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&text=AFK&display=swap" rel="stylesheet" />
 			<div className={styles["container"]}>
 				<Header />
 				<Navigation />
