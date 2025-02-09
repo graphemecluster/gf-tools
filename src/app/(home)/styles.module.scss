@@ -14,7 +14,7 @@
         letter-spacing: -0.015em;
       }
       &[lang="zh-yue-HK"] {
-        color: #427443;
+        color: #42744C;
         font-weight: 350;
       }
       &[lang="ja"] {
@@ -57,7 +57,7 @@
     border-radius: 0.5rem;
     margin: 0.5rem 0;
     border: 1px solid #B3DAC5;
-    box-shadow: 0.5px 1.5px 0 0 #597D4A;
+    box-shadow: 0.5px 1.5px 0 0 #42744C;
     display: flex;
     align-items: center;
     transition: 100ms opacity;
@@ -67,12 +67,12 @@
     svg {
       flex-shrink: 0;
     }
-    > div {
+    &:not(.has-reference) > div {
       margin-left: 0.5rem;
       > div:last-child {
         font-size: 1rem;
         line-height: 1.5rem;
-        color: #597D4A;
+        color: #42744C;
       }
     }
     > span {
@@ -80,6 +80,9 @@
     }
     &.has-reference {
       display: block;
+      > * > span {
+        margin-left: 0.5rem;
+      }
       > :first-child {
         display: flex;
         align-items: center;
@@ -88,7 +91,7 @@
         margin: 0.25rem 0 0 0.5rem;
         font-size: 0.875rem;
         line-height: 1.25rem;
-        color: #597D4A;
+        color: #42744C;
         display: flex;
         align-items: center;
         transition: 150ms color;
