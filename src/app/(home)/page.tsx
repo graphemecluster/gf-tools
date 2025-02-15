@@ -1,4 +1,4 @@
-import { RiCodeSSlashFill, RiExternalLinkLine, RiFileCodeLine, RiFileMusicLine, RiFontSize, RiInputMethodLine, RiKeyboardBoxLine, RiMedalLine, RiMusic2Fill, RiNpmjsLine, RiPagesLine, RiRefreshLine, RiTeamLine, RiTranslate2 } from "@remixicon/react";
+import { RiCodeSSlashFill, RiExternalLinkLine, RiFileCodeLine, RiFileMusicLine, RiFontSize, RiInputMethodLine, RiKeyboardBoxLine, RiMedalLine, RiMusic2Fill, RiNpmjsLine, RiPagesLine, RiRefreshLine, RiSpeakAiLine, RiTeamLine, RiTranslate2 } from "@remixicon/react";
 
 import Anchor from "@/components/Anchor";
 import { TypeScriptLine } from "@/components/icons";
@@ -39,6 +39,15 @@ export default function Home() {
 						<div>
 							<div>粵拼輸入法下載網站 Jyutping IME Download Website</div>
 							<div>https://jyutping.net</div>
+						</div>
+					</Anchor>
+				</li>
+				<li>
+					<Anchor href="https://hkilang.github.io/TTS/">
+						<RiSpeakAiLine size="2rem" />
+						<div>
+							<div>香港圍頭話及客家話文字轉語音（TTS）朗讀應用程式</div>
+							<div>https://hkilang.github.io/TTS/</div>
 						</div>
 					</Anchor>
 				</li>
